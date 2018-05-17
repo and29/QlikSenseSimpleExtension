@@ -1,0 +1,9 @@
+<div qv-extension>
+    <b ng-bind="myTitle" />
+    <div style="overflow-y: scroll">
+        <div  ng-style="myStyle"
+                ng-repeat="row in layout.qHyperCube.qDataPages[0].qMatrix">
+                <span>{{ row[0].qText }}</span>
+        </div>
+    </div>
+</div>
