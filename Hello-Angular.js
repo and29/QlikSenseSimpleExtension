@@ -48,8 +48,8 @@ define( [
 				}
 				$scope.selectToggle= function(id){
 					console.log("I've been called", id);
-					this.selectValues( 0, [id], true);
-					this.classList.toggle("selected");
+					this.backendApi.selectValues( 0, [id], true);
+					/*this.classList.toggle("selected");*/
 				}
 				$scope.myStyle = $scope.myStyleFunct($scope.layout);
 

@@ -2,14 +2,36 @@ define( [], function () {
     'use strict';
 
     var dimensions = {
-                    uses: "dimensions",
-                    label: "Dimensions",
-                    ref: "qListObjectDef",
-                    min: 0,
-                    max: 1
-                
+                    uses: "dimensions"
+                  
             
         };
+/*
+        var dimensions =  {
+                type: "items",
+                label: "Dimensions",
+                ref: "qListObjectDef",
+                min: 0,
+                max: 1,
+                items: {
+                    label: {
+                        type: "string",
+                        ref: "qListObjectDef.qDef.qFieldLabels.0",
+                        label: "Label",
+                        show: true
+                    },
+                    field: {
+                        type: "string",
+                        expression: "always",
+                        expressionType: "dimension",
+                        ref: "qListObjectDef.qDef.qFieldDefs.0",
+                        label: "Field or variable name"
+                    }
+                }
+            };*/
+
+
+
     /*var measures = { uses: "measures" };*/
     var sorting = { uses: "sorting" };
     /*var addons = { uses: "addons" };*/
